@@ -72,6 +72,13 @@ pr_ncd = [trn.y.iloc[np.argsort(d)[:k].tolist()].mean() for d in dist]
 
 
 ```python
+print(f"Accuracy = {np.mean(np.where(np.array(pr_ncd) >= 0.5, 1, 0) == tst.y):.3f}")
+```
+
+    Accuracy = 0.699
+    
+
+```python
 fpr, tpr, threshold = roc_curve(tst.y, pr_ncd)
 ```
 
