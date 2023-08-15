@@ -13,7 +13,7 @@ import gzip
 import nltk
 from nltk.corpus import movie_reviews
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import (roc_curve, roc_auc_score)
+from sklearn.metrics import roc_curve, roc_auc_score
 ```
 
 
